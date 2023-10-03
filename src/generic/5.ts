@@ -21,10 +21,21 @@ class KeyValue implements KeyValuePair<string | symbol, unknown> {
   get value() {
     return this._value;
   }
+
+  set value(v) {
+    this._value = v;
+  }
 }
 
 const keyValue = new KeyValue(Symbol('obj'), {});
+const keyValue2 = new KeyValue('name', 'Alex');
 
 console.log(keyValue.key, keyValue.value);
+console.log(keyValue2.key, keyValue2.value);
+
+keyValue2.value = 'Bob';
+const str: string = <string>keyValue2.value;
+
+console.log(str);
 
 export {};
