@@ -1,6 +1,10 @@
-const some: unknown = 'Text';
-const str: string = <string>some;
+/* eslint-disable prefer-const */
+let some: unknown = 'Text';
+let str: string;
 
-console.log(str);
+if (typeof some === 'string') {
+  str = some;
+  console.log(str);
+}
 
 export {};

@@ -22,10 +22,10 @@ type Form = {
 type Params = Omit<Form, 'errors'>;
 
 const params: Params = {
-  email: 'rex2023@gmail.com',
+  email: 'rex20@gmail.com',
   firstName: 'Rex',
-  lastName: '',
-  phone: '',
+  lastName: 'Finch',
+  phone: '+14844760044',
 };
 
 console.log(params);
