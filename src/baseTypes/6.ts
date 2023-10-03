@@ -14,4 +14,8 @@ function customError(): never {
   throw new Error('Error');
 }
 
+showMessage('Hello');
+calc(23, 33);
+customError();
+
 export {};

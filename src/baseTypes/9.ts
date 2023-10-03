@@ -31,4 +31,6 @@ const page2: Page = {
   status: 'close',
 };
 
+console.log(page1, page2);
+
 export {};

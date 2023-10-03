@@ -6,5 +6,6 @@
 type Gender = 'male' | 'female';
 
 const myGender: Gender = 'female';
+console.log(myGender);
 
 export {};

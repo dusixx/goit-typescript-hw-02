@@ -9,7 +9,10 @@ interface KeyValuePair<TKey, TValue> {
 }
 
 class KeyValue implements KeyValuePair<string | symbol, unknown> {
-  constructor(private _key: string | symbol, private _value: unknown) {}
+  constructor(
+    private _key: string | symbol,
+    private _value: unknown
+  ) {}
 
   get key() {
     return this._key;
@@ -21,5 +24,7 @@ class KeyValue implements KeyValuePair<string | symbol, unknown> {
 }
 
 const keyValue = new KeyValue(Symbol('obj'), {});
+
+console.log(keyValue.key, keyValue.value);
 
 export {};

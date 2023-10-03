@@ -16,4 +16,6 @@ enum Weekday {
 const isWeekend = (wd: Weekday): boolean =>
   wd === Weekday.Sunday || wd === Weekday.Thursday;
 
+isWeekend(Weekday.Sunday);
+
 export {};

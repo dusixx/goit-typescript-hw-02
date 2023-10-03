@@ -5,4 +5,7 @@
 
 let person: [string, number] = ['Max', 21];
 
+person = ['Alex', 33];
+console.log(person);
+
 export {};

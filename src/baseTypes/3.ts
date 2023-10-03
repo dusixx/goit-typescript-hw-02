@@ -1,4 +1,6 @@
-let some: unknown = 'Text';
-let str: string = <string>some;
+const some: unknown = 'Text';
+const str: string = <string>some;
+
+console.log(str);
 
 export {};

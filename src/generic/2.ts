@@ -23,4 +23,6 @@ function compare(
   };
 }
 
+compare({ name: 'top', color: 'red' }, { position: 120, weight: 400 });
+
 export {};

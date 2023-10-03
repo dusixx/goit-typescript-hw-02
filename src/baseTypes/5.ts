@@ -6,4 +6,8 @@
 let union: string | number = 1;
 let literal: 'enable' | 'disable' = 'disable';
 
+union = 'text';
+literal = 'enable';
+console.log(union, literal);
+
 export {};
