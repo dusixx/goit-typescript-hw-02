@@ -15,6 +15,7 @@ const RoleDescription: Record<UserRole, string> = {
   editor: 'Editor User',
   guest: 'Guest User',
 };
+
 console.log(RoleDescription);
 
 export {};

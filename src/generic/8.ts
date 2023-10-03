@@ -27,6 +27,7 @@ const params: Params = {
   lastName: '',
   phone: '',
 };
+
 console.log(params);
 
 export {};

@@ -6,16 +6,15 @@ class Component<T> {
   constructor(public props: T) {}
 }
 
-type BookCard = { title: string; author?: string; id?: number };
+type Hero = { title: string; content?: string };
 
-class Page extends Component<BookCard> {
+class Page extends Component<Hero> {
   pageInfo() {
     console.log(this.props.title);
   }
 }
 
-const page = new Page({ title: 'It' });
-
+const page = new Page({ title: 'Arctic coast way' });
 page.pageInfo();
 
 export {};
